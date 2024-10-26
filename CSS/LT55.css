@@ -472,7 +472,7 @@ body {
     height: 1500px;
   }
   .ourWork .ourWorkCont {
-    left: 5px;
+    left: 0;
   }
   .ourWork .ourWorkImage {
     height: auto;
