@@ -1,0 +1,32 @@
+.green-alt .page-head .page-title {
+  color: #58B19F;
+}
+
+.lite-blue .page-head .page-title {
+  color: #0652DD;
+}
+
+.dark-blue .page-head .page-title {
+  color: #1B1464;
+}
+
+.orange-themes .page-head .page-title {
+  color: #ee5a24;
+}
+
+.red-themes .page-head .page-title {
+  color: #ea2027;
+}
+
+.dark-themes .page-head .page-title {
+  color: #130f40;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #EAB543;
+  font-family: "Open Sans", sans-serif;
+}

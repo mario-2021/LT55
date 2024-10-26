@@ -1,0 +1,30 @@
+$mainColor: #c49b64;
+$lightColor: #fff;
+
+$darkColor: #000;
+$lightColorAlt: #f8efba;
+
+$darkColorAlt: #b49872;
+$flatColor: #8b8991;
+
+$themes: (
+    green-alt: (color: #58B19F),
+    lite-blue: (color: #0652DD),
+    dark-blue: (color: #1B1464),
+    orange-themes: (color: rgb(238, 90, 36)),
+    red-themes: (color: rgb(234, 32, 39)),
+    dark-themes: (color: #130f40)
+);
+
+@each $theme, $map in $themes {
+    .#{$theme} {
+        // .page-head .page-title {
+        //     color: map-get($map, color);
+        // }
+        
+    }
+}
+
+$maxMobile: 600px;
+$maxSmall: 767px;
+$maxMedium: 991px;

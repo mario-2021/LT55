@@ -1,0 +1,265 @@
+@use './variable' as *;
+@use '../pages/homepage' as *;
+
+
+
+.nav-bar {
+    .brandName {
+        @media (max-width: $maxMobile) {
+            margin-left: 35px;
+        }
+        @media (min-width: $maxSmall) and (max-width: $maxMedium) {
+            margin-left: -75px;
+        }
+    }
+    .links {
+    @media (max-width: $maxSmall) {
+        display: none;
+    }
+    @media (min-width: $maxSmall) and (max-width: $maxMedium) {
+        margin-right: -95px;
+    }
+    &.open {
+        @media (max-width: $maxSmall) {
+                padding: 10px;
+                display: block;
+                position: absolute;
+                right: 10px;
+                top: 170px;
+                width: 60%;
+                border-radius: 20px;
+                text-align: center;
+                z-index: 100000000;
+                li {
+                    @media (max-width: $maxSmall) {
+                        display: block;
+                        margin: 10px;
+                        transition-duration: .3s;
+                        border: none;
+                        &:hover {
+                            font-size: 2rem;
+                            border: none;
+                        }
+                    }
+                    a {
+                        @media (max-width: $maxSmall) {
+                            font-weight: bold;
+                        }
+                    }
+                }
+            } 
+        }
+    }
+    .toggle-menu {
+        @media (max-width: $maxSmall) {
+            display: inline-block;
+            margin-top: -35px;
+        }
+    }
+}
+
+.header {
+    .bxslider {
+        .bxslider-text {
+            .new-size {
+                @media (max-width: $maxMobile) {
+                    font-size: 1rem;
+                    line-height: 2.5rem;
+                }
+                span {
+                    font-size: 1.5rem !important;
+                }
+            }
+        }
+    }
+}
+
+.ourServices {
+    .special-h {
+        &::after {
+            @media (max-width: $maxMobile) {
+                display: none;
+            }
+            @media (min-width: $maxMobile) and (max-width: $maxSmall) {
+                display: none;
+            }
+            @media (min-width: $maxSmall) and (max-width: $maxMedium) {
+                position: absolute;
+                top: 45px;
+                left: 250px;
+                width: 195px;
+            }
+        }
+    }
+}
+
+.ourPortfolio {
+    .portfolioInfo {
+        @media (min-width: $maxSmall) and (max-width: $maxMedium) {
+            margin-bottom: 25px;
+            width: 100%;
+        }
+        .special-h {
+            @media (max-width: $maxMobile) {
+                margin-left: 35%;
+                &::after {
+                    top: 45px;
+                    left: 5px;
+                    width: 165px;
+                }
+            }
+            @media (min-width: $maxMobile) and (max-width: $maxSmall) {
+                margin-left: 35%;
+                &::after {
+                    display: none;
+                }
+            }
+        }
+    }
+    .portfolioImage {
+        @media (min-width: $maxSmall) and (max-width: $maxMedium) {
+            margin-bottom: 25px;
+            width: 100%;
+        }
+        .teamImage {
+            @media (max-width: $maxMobile) {
+                margin-bottom: 45px;
+                width: 50%;
+            }
+            @media (min-width: $maxMobile) and (max-width: $maxSmall) {
+                margin-bottom: 45px;
+                width: 50%;
+                .overlay {
+                    width: 91%;
+                }
+            }
+            @media (min-width: $maxSmall) and (max-width: $maxMedium) {
+                margin-bottom: 25px;
+            }
+        }
+    }
+}
+
+.testimonials {
+    .special-h {
+        &::after {
+            @media (min-width: $maxMobile) and (max-width: $maxSmall) {
+                display: none;
+            }
+            @media (min-width: $maxSmall) and (max-width: $maxMedium) {
+                position: absolute;
+                top: 40px;
+                left: 205px;
+                width: 285px;
+            }
+        }
+    }
+    .slider {
+        .new-Size {
+            @media (max-width: $maxMobile) {
+                margin-left: 38%;
+            }
+        }
+    }
+}
+
+.project {
+    .special-h {
+        @media (max-width: $maxMobile) {
+            margin-left: 35%;
+        }
+        &::after {
+            @media (max-width: $maxMobile) {
+                top: 40px;
+                left: -6px;
+                width: 115px;
+            }
+            @media (min-width: $maxMobile) and (max-width: $maxSmall) {
+                display: none;
+            }
+        }
+        @media (min-width: $maxMobile) and (max-width: $maxSmall) {
+            margin-left: 40%;
+        }
+    }
+}
+
+.project {
+    .projectLink {
+        @media (max-width: $maxMobile) {
+            margin-left: 35px;
+        }
+        @media (min-width: $maxMobile) and (max-width: $maxSmall) {
+            margin-left: 50px;
+        }
+    }
+    .gallery {
+        @media (max-width: $maxMobile) {
+            width: 75%;
+            margin-left: 70px;
+        }
+        .sizeEle {
+            @media (min-width: $maxMobile) and (max-width: $maxSmall) {
+                width: 50%;
+            }
+            .overlay {
+                @media (min-width: $maxSmall) and (max-width: $maxMedium) {
+                    width: 93%;
+                }
+            }
+        }
+    }
+}
+
+.contact {
+    .about {
+        @media (min-width: $maxSmall) and (max-width: $maxMedium) {
+            width: 50%;
+            margin-bottom: 55px;
+        }
+    }
+    .tags {
+        @media (max-width: $maxMobile) {
+            margin-top: 25px;
+            margin-bottom: 35px;
+        }
+        @media (min-width: $maxSmall) and (max-width: $maxMedium) {
+            width: 50%;
+            margin-bottom: 55px;
+        }
+        .nEwSiZe {
+            @media (max-width: $maxMobile) {
+                margin-left: 10px;
+            }
+            span {
+                @media (max-width: $maxMobile) {
+                    margin-top: 1rem;
+                }
+                @media (min-width: $maxSmall) and (max-width: $maxMedium) {
+                    margin-top: 1rem;
+                }
+            }
+        }
+    }
+    .posts {
+        @media (min-width: $maxMobile) and (max-width: $maxSmall) {
+            margin-top: 25px;
+        }
+        @media (min-width: $maxSmall) and (max-width: $maxMedium) {
+            width: 50%;
+            margin-bottom: 55px;
+        }
+    }
+    .blog {
+        @media (max-width: $maxMobile) {
+            margin-top: 50px;
+        }
+        @media (min-width: $maxMobile) and (max-width: $maxSmall) {
+            margin-top: 25px;
+        }
+        @media (min-width: $maxSmall) and (max-width: $maxMedium) {
+            width: 50%;
+            margin-bottom: 55px;
+        }
+    }
+}

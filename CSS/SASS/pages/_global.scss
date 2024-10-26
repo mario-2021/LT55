@@ -1,0 +1,75 @@
+@use '../help/variable' as *;
+
+
+
+.headerImage {
+        width: 100%;
+        height: 100%;
+    }
+
+.overlay {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(196 155 100 / 65%);
+}
+
+.butt {
+    width: 150px;
+    height: 60px;
+    background-color: $mainColor;
+    border: none;
+    border-radius: 15%;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: $lightColor;
+    font-size: 1.25rem;
+    margin: 10px;
+    padding: 5px;
+    box-shadow: -6px 5px 0px 0px $lightColor;
+    transition: all .5s ease-in-out;
+    &:hover {
+        background-color: $lightColor;
+        color: $mainColor;
+        box-shadow: -6px 5px 0px 0px $mainColor;
+    }
+}
+
+hr {
+    color: $darkColorAlt;
+    width: 100%;
+    background-color: $darkColorAlt;
+    border-bottom-width: 5px;
+    border-bottom-style: double;
+    border-bottom-color: $lightColorAlt;
+}
+
+.hide {
+    display: none;
+}
+
+.myWeb {
+
+}
+
+.myWeb {
+    .over {
+    position: absolute;
+    top: 0px;
+    left: 11px;
+    width: 350px;
+    height: 100%;
+    background-color: rgb(180 152 114 / 90%);
+    color: $lightColorAlt;
+    padding-top: 25px;
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    user-select: none;
+    display: none;
+    }
+    &:hover .over {
+        display: block;
+    }
+}
