@@ -732,6 +732,27 @@ body {
   }
 }
 
+@media (min-width: 992px) and (max-width: 1199px) {
+  .feature .featureCont {
+    left: 25px;
+  }
+  .ourWork .ourWorkImage {
+    height: auto;
+  }
+  .ourWork .ourWorkImg {
+    height: 1300px;
+  }
+  .ourWork .ourWorkCont {
+    left: 20px;
+  }
+  .ourWork .ourWorkCont .items-box .headerImage {
+    width: 295px;
+  }
+  .ourWork .ourWorkCont .items-box .over {
+    width: 295px;
+  }
+}
+
 .headerImage {
   width: 100%;
   height: 100%;
